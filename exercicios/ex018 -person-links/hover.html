@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+
+    <style>
+body{
+    background-image: linear-gradient(90deg, rgb(112, 112, 175), rgb(111, 196, 111));
+    text-align: center;
+}
+
+main{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div > p {
+    display: none;
+
+}
+
+div:hover > p {
+    box-shadow: 10px 10px 10px rgba(56, 151, 56, 0.247);
+    font-size: larger;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    background-color: rgb(143, 236, 182);
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+div:hover{
+    color: aqua;
+}
+
+    </style> 
+</head>
+<body>
+   <main>
+       <h1>Exemplo De Hover</h1>
+       <p>Passe o mouse sobre o texto abaixo</p>
+       <div>Passe o mouse aqui
+        <p>Me vende um pão!</p>
+       </div>
+   </main>
+</body>
+</html>

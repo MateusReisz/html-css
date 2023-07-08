@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flex</title>
+</head>
+<body> 
+    <h1>Uma imagem em diversos tamanhos de navegador.</h1>
+    <picture>
+        <source media="(max-width: 850px)" srcset="imagens/car-500.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/car-800.png" type="image/png">
+        <img src="imagens/car-1000.png" alt="imagem flex">
+    </picture>
+</body>
+</html>
