@@ -124,6 +124,11 @@ main p{
     border-radius: 10px;
 }
 
+.ft{
+    background-position: center center;
+
+}
+
 .video{
     background-color: rgb(99, 201, 99);
     margin: 10px 0px 30px 0px;
