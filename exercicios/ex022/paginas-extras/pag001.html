@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas grandes</title>
+    <title>iframe pag02</title>
     <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
         table{
-            width: 500px;
+            width: 95vw;
             border-collapse: collapse;
             padding: 5px;
             position: relative;
         }
         caption{
             padding: 10px;
-            background-color: gainsboro;
+            background-color: rgb(219, 219, 219);
             font-size: 1.5em;
             font-weight: bold;
         }
         tbody > tr:nth-child(odd){
-            background-color: lightgray;
+            background-color: rgb(192, 190, 190);
         }
         tr{
             text-align: center;
@@ -38,6 +43,9 @@
             position: sticky;
             top: -1px;
             background-color: cadetblue;
+        }
+        tr:nth-child(even){
+            background-color: white;
         }
     </style>
 </head>
@@ -168,6 +176,4 @@
             </tr>
         </tfoot>
     </table>
-
-</body>
 </html>
