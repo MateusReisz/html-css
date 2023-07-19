@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        html, body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+        fieldset{
+            background-color: rgb(79, 79, 255);
+            color: beige;
+            display: inline-block;
+            position: absolute;
+            top: 20%;
+            right: 50%;
+            border-radius: 10%;
+        }
+        legend{
+            position: relative;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50% -50%);
+            font-size: 22px;
+            font-weight: bolder;
+            border-radius: 10px;
+            border: 1px black solid;
+            padding: 5px;
+            background-color: rgb(123, 131, 250);
+            color: rgb(0, 0, 0);
+            text-align: bottom;
+        }
+        form > p{
+            color: black;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Form email e tell</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.js" method="get" autocomplete="on">
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" autocomplete="on" placeholder="Digite seu email" required >
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" autocomplete="on" placeholder="(xx)xxxxx-xxxx" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+            </p>
+            <p>
+                <label for="isen">Senha</label>
+                <input type="number" name="sen" id="isen" placeholder="Digite uma senha" minlength="6" maxlength="13" required>
+            </p>
+            <p>
+                <input type="submit" value="Logar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+</body>
+</html>
