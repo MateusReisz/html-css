@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.js" method="get" autocomplete="on"></form> 
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" autocomplete="name">
+    </p>
+    <p>
+        <label for="inota1">Matemática</label>
+        <input type="number" name="nota" id="inota1" min="0" max="10" oninput="itotal.innerHTML = Number(inota1.value) + Number(inota2.value) + Number(inota3.value)">
+    </p>
+    <p>
+        <label for="inota2">Física</label>
+        <input type="number" name="nota" id="inota2" min="0" max="10" oninput="itotal.innerHTML = Number(inota1.value) + Number(inota2.value) + Number(inota3.value)">
+    </p>
+    <p>
+        <label for="inota3">Química</label>
+        <input type="number" name="nota" id="inota3" min="0" max="10" oninput="itotal.innerHTML = Number(inota1.value) + Number(inota2.value) + Number(inota3.value)">
+    </p>
+    <p>
+        <label for="itotal">Total</label>
+        <output name="total" id="itotal">0</output>
+    </p>
+
+
+
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Deletar">
+    </p>
